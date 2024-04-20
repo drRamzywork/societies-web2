@@ -331,3 +331,111 @@
   opacity: 1;
   visibility: visible;
 }
+
+.societie {
+  /* width: 200px; */
+  /* height: 200px; */
+  position: relative;
+  width: fit-content;
+
+  .name {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: -10px;
+    background-color: #fefefefe;
+    padding: 5px;
+    border-radius: 16px;
+    display: flex;
+    /* opacity: 0; */
+
+    p {
+      margin: auto;
+      font-size: 16px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+  }
+
+  .icon_container {
+    img {
+      /* transform: rotate(180deg); */
+    }
+  }
+
+  .RoundedMarkIcon {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    border: 1px solid #e2e2e2;
+
+    svg {
+      margin: auto;
+    }
+  }
+
+  .markName {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.societie .name:hover {
+  transform: scale(1.5);
+}
+
+.heartbeat::before {
+  content: "";
+  position: absolute;
+  /* top: 50%; */
+  bottom: -29px;
+  left: 0px;
+  border: 3px solid rgb(222, 9, 9);
+  border-radius: 50%; /* Makes it round */
+  animation: expandLine infinite 1s ease-in-out; /* Animation for active bullet */
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes expandLine {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  25% {
+    width: 24px;
+    height: 24px;
+    opacity: 0.3;
+  }
+  75% {
+    width: 24px;
+    height: 24px;
+
+    opacity: 0.3;
+  }
+  100% {
+    width: 0;
+    height: 0;
+
+    opacity: 0;
+  }
+}

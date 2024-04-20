@@ -43,6 +43,7 @@ function App() {
     fetchRegionsId();
   }, []);
 
+  console.log(societies, "societies")
 
   return (
     <div className="app">

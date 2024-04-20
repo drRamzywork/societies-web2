@@ -41,9 +41,8 @@ const KSAMap = () => {
         <div
           className="marksImgContainer"
           style={{
-            inset: `${windowHeight * 0.07}px auto auto ${
-              windowWidth * 0.156
-            }px`,
+            inset: `${windowHeight * 0.07}px auto auto ${windowWidth * 0.156
+              }px`,
             width: `${windowWidth * 0.62}px`,
             height: `${windowHeight * 0.807}px`,
           }}
@@ -64,9 +63,8 @@ const KSAMap = () => {
         <div
           className="marksImgContainer"
           style={{
-            inset: `${windowHeight * 0.112}px auto auto ${
-              windowWidth * 0.258
-            }px`,
+            inset: `${windowHeight * 0.112}px auto auto ${windowWidth * 0.258
+              }px`,
             width: `${windowWidth * 0.418}px`,
             // width: "642.75px",
             height: `${windowHeight * 0.757}px`,
@@ -74,13 +72,13 @@ const KSAMap = () => {
         >
           <img src={Cities} className="svgMarks" />
         </div>
+
         {/* رياض */}
         <div
           className="marksImgContainer"
           style={{
-            inset: `${windowHeight * 0.369}px auto auto ${
-              windowWidth * 0.515
-            }px`,
+            inset: `${windowHeight * 0.369}px auto auto ${windowWidth * 0.515
+              }px`,
             width: `${windowWidth * 0.044}px`,
             height: `${windowHeight * 0.053}px`,
             pointerEvents: "auto",
@@ -167,9 +165,8 @@ const KSAMap = () => {
         <div
           className="marksImgContainer"
           style={{
-            inset: `${windowHeight * 0.369}px auto auto ${
-              windowWidth * 0.341
-            }px`,
+            inset: `${windowHeight * 0.369}px auto auto ${windowWidth * 0.341
+              }px`,
             width: `${windowWidth * 0.069}px`,
             height: `${windowHeight * 0.053}px`,
             pointerEvents: "auto",
@@ -254,9 +251,8 @@ const KSAMap = () => {
         <div
           className="marksImgContainer"
           style={{
-            inset: `${windowHeight * 0.564}px auto auto ${
-              windowWidth * 0.329
-            }px`,
+            inset: `${windowHeight * 0.564}px auto auto ${windowWidth * 0.329
+              }px`,
             width: `${windowWidth * 0.032}px`,
             height: `39px`,
             pointerEvents: "auto",
@@ -338,9 +334,8 @@ const KSAMap = () => {
         <div
           className="marksImgContainer"
           style={{
-            inset: `${windowHeight * 0.246}px auto auto ${
-              windowWidth * 0.611
-            }px`,
+            inset: `${windowHeight * 0.246}px auto auto ${windowWidth * 0.611
+              }px`,
             width: `${windowWidth * 0.047}px`,
             height: `39px`,
             pointerEvents: "auto",
@@ -422,9 +417,8 @@ const KSAMap = () => {
         <div
           className="marksImgContainer"
           style={{
-            inset: `${windowHeight * 0.321}px auto auto ${
-              windowWidth * 0.638
-            }px`,
+            inset: `${windowHeight * 0.321}px auto auto ${windowWidth * 0.638
+              }px`,
             width: `${windowWidth * 0.041}px`,
             height: `${windowHeight * 0.053}px`,
             pointerEvents: "auto",
@@ -510,9 +504,8 @@ const KSAMap = () => {
         <div
           className="marksImgContainer"
           style={{
-            inset: `${windowHeight * 0.391}px auto auto ${
-              windowWidth * 0.612
-            }px`,
+            inset: `${windowHeight * 0.391}px auto auto ${windowWidth * 0.612
+              }px`,
             width: `${windowWidth * 0.036}px`,
             height: `${windowHeight * 0.05}px`,
             pointerEvents: "auto",

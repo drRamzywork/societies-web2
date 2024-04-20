@@ -8,7 +8,7 @@ import {
 } from "@react-google-maps/api";
 import "../assets/css/home.css";
 import "../assets/css/clouds.css";
-import { HospitalsIcon, MallIcon, Question, SchoolIcon } from "../assets/svg";
+import { HospitalsIcon, MallIcon, Question, SchoolIcon, SmallWhiteMark } from "../assets/svg";
 import Clouds from "./components/Clouds";
 import CheckBox from "./components/CheckBox";
 import { mapStyles } from "./components/mapStyles";
@@ -18,6 +18,10 @@ import CustomMarker from "./components/CustomMarker";
 import CustomMarkerTwo from "./components/CustomMarkerTwo";
 import RotatePhone from "./components/RotatePhone";
 import { House, MapMark } from "../assets/svg";
+import SociteMarker from "./components/sociteMarker";
+
+import { IoLocation } from "react-icons/io5";
+
 
 const id = ["360671dee42bc03f"];
 
@@ -111,6 +115,26 @@ const IconsMarker = ({ name, icon, nameBoxColor }) => {
         {name}
       </div>
     </div>
+  );
+};
+const IconsMarker2 = ({ name, icon, nameBoxColor }) => {
+  return (
+    <div
+      className="marksImgContainer"
+      style={{
+        // inset: `${windowHeight * 0.369}px auto auto ${windowWidth * 0.515
+        //   }px`,
+        // width: `${windowWidth * 0.044}px`,
+        // height: `${windowHeight * 0.053}px`,
+        pointerEvents: "auto",
+        background: 'red !important',
+        width: `200px`,
+        height: `220px`
+      }}
+      onClick={handleCityPage}
+    >
+
+    </div >
   );
 };
 
@@ -293,7 +317,6 @@ const MapTwo = ({ societies }) => {
     }
   };
 
-  // to show custom markers with the name of it
 
   //making the direction line between start and end point
   const calculateDirections = () => {
@@ -400,7 +423,6 @@ const MapTwo = ({ societies }) => {
   };
 
 
-
   return (
     <div
       style={{
@@ -410,6 +432,10 @@ const MapTwo = ({ societies }) => {
         width: "100%",
       }}
     >
+
+
+
+
       <CheckBox
         isLandMarksChecked={isLandMarksChecked}
         handleCheckboxChange={handleCheckboxChange}
@@ -421,7 +447,7 @@ const MapTwo = ({ societies }) => {
         handleHospitalMarkChange={handleHospitalMarkChange}
         handleSocietiesMarkChange={handleSocietiesMarkChange}
       />
-      <Clouds />
+      {/* <Clouds /> */}
 
       <LoadScript
         googleMapsApiKey="AIzaSyC0fUYASQXlqfp1d5EFSIT7_0lg0_OIxq0"
@@ -434,7 +460,7 @@ const MapTwo = ({ societies }) => {
           }}
           onLoad={handleMapLoad}
           center={{ lat: 24.774265, lng: 46.738586 }}
-          zoom={8}
+          zoom={11}
           options={{
             styles: mapStyles,
             mapTypeId: "hybrid",
@@ -445,7 +471,7 @@ const MapTwo = ({ societies }) => {
             streetViewControl: false,
             mapTypeControl: true,
             googleLogo: false,
-            compassControl: true,
+            compassControl: false,
           }}
         >
 
@@ -466,7 +492,7 @@ const MapTwo = ({ societies }) => {
           )}
           {/* {overlayViews} */}
 
-          {societies.map((society, index) => (
+          {societies?.map((society, index) => (
             <OverlayView
               key={society.id}
               position={{
@@ -476,7 +502,7 @@ const MapTwo = ({ societies }) => {
               mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
             >
 
-              <CustomMarker
+              {/* <IconsMarker2
                 name={society.name}
                 location={{
                   lat: parseFloat(society.lat),
@@ -489,20 +515,25 @@ const MapTwo = ({ societies }) => {
                     lng: parseFloat(society.long)
                   }
                 })}
-              />
+              /> */}
 
 
-              {/* 
-              <IconsMarker
-                name={society.name}
-                location={{
-                  lat: parseFloat(society.lat),
-                  lng: parseFloat(society.long)
-                }}
-                backdrop={backdrop}
-                icon={SchoolIcon}
-                nameBoxColor={"#8a93dd"}
-              ></IconsMarker> */}
+
+
+
+              <div className="societie">
+                <div className="RoundedMarkIcon">
+                  <IoLocation color="#ffffff" fontSize={24} />
+                </div>
+
+                <div className="markName">
+                  <p>{society.name}</p>
+                </div>
+
+                {/* <div className="heartbeat"></div */}
+
+
+              </div>
 
 
             </OverlayView>
@@ -529,6 +560,7 @@ const MapTwo = ({ societies }) => {
               </OverlayView>
             ))}
           {/* {isLandMarksChecked && overlayViews2} */}
+
           {response && (
             <>
               <DirectionsRenderer

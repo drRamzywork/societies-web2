@@ -142,16 +142,7 @@ const Map = () => {
 
   return (
     <>
-      {/* <div className="imgRiayd">
-        <img src={Riyad} alt="Riyad" className="img1" />
-      </div> */}
-      <div className="clouds-container">
-        <img src={Cloud1} alt="Cloud" className="cloud cloud-1" />
-        <img src={Cloud2} alt="Cloud" className="cloud cloud-2" />
-        <img src={Cloud3} alt="Cloud" className="cloud cloud-3" />
-        <img src={Cloud4} alt="Cloud" className="cloud cloud-4" />
-        <img src={Cloud5} alt="Cloud" className="cloud cloud-5" />
-      </div>
+
       <LoadScript
         googleMapsApiKey="AIzaSyC0fUYASQXlqfp1d5EFSIT7_0lg0_OIxq0"
         libraries={["places"]}
@@ -166,7 +157,7 @@ const Map = () => {
           zoom={6}
           onClick={onMapClick}
         >
-          {response && (
+          {/* {response && (
             <>
               <DirectionsRenderer
                 options={{
@@ -213,7 +204,7 @@ const Map = () => {
                 </InfoWindow>
               )}
             </>
-          )}
+          )} */}
         </GoogleMap>
 
         <div>
