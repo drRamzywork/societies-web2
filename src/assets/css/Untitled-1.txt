@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ksaImgContainer {
+  position: relative;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  border: 0;
+  /* opacity: 0; */
+}
+.img1 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+}
+.containerImg1 {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: 0.3s;
+}
+.marksImgContainer {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+.svgMarks {
+  width: 100%;
+  height: 100%;
+}
+
+/* .img1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  pointer-events: all;
+  object-fit: cover;
+} */
+.gm-style .gm-style-iw-c {
+  padding: 0px !important;
+}
+.gm-style-iw-c {
+  padding: 0px !important;
+}
+
+/* .imgRiayd {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-origin: 0 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100vh; */
+/* pointer-events: all; */
+/* transform-origin: 0px 0px 0px;
+  transform: matrix(1.2, 0, 0, 1.2, -108.352, -395.245);
+} */
+
+/* .WindowDetails {
+  padding: 0px !important;
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 20px !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  max-width: 300px !important;
+  max-height: 300px !important;
+  min-width: 0px;
+}
+.gm-style-iw-c {
+  padding: 0px !important;
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 20px !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  max-width: 300px !important;
+  max-height: 300px !important;
+}
+.gm-style {
+  padding: 0px !important;
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 20px !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  max-width: 300px !important;
+  max-height: 300px !important;
+} */

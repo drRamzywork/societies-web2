@@ -1,0 +1,159 @@
+/* styles.css or styles.scss */
+
+.ksaImgContainer {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 0;
+  /* opacity: 0; */
+
+  .img1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+  }
+}
+.containerImg1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s;
+}
+.marksImgContainer {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+.svgMarks {
+  width: 100%;
+  height: 100%;
+}
+.imgRiayd {
+  /* width: 100%;
+  height: 100%;
+  position: relative;
+  transform-origin: 0 0; */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  /* pointer-events: all; */
+  /* transform-origin: 0px 0px 0px;
+  transform: matrix(1.2, 0, 0, 1.2, -108.352, -395.245); */
+  .img1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    pointer-events: all;
+    object-fit: cover;
+  }
+}
+.gm-style .gm-style-iw-c {
+  padding: 0px !important;
+}
+.gm-style-iw-c {
+  padding: 0px !important;
+}
+
+@media (max-width: 910px) and (orientation: portrait) {
+  .mobile-help {
+    display: flex !important;
+  }
+}
+.mobile-help {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999999999999999999999999999999999999999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  pointer-events: unset;
+}
+.bg__black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #232323;
+  pointer-events: none;
+}
+.help__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  border-radius: 16px;
+  padding: 30px;
+  background: rgba(35, 35, 35, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  .help__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: -14px;
+    .img1 {
+      max-width: 125px;
+    }
+  }
+  .help__description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #f7f7f7;
+  }
+}
+/* .WindowDetails {
+  padding: 0px !important;
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 20px !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  max-width: 300px !important;
+  max-height: 300px !important;
+  min-width: 0px;
+}
+.gm-style-iw-c {
+  padding: 0px !important;
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 20px !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  max-width: 300px !important;
+  max-height: 300px !important;
+}
+.gm-style {
+  padding: 0px !important;
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 20px !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  max-width: 300px !important;
+  max-height: 300px !important;
+} */
