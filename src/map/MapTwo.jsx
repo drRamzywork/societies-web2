@@ -18,7 +18,6 @@ import CustomMarker from "./components/CustomMarker";
 import CustomMarkerTwo from "./components/CustomMarkerTwo";
 import RotatePhone from "./components/RotatePhone";
 import { House, MapMark } from "../assets/svg";
-import SociteMarker from "./components/sociteMarker";
 
 import { IoLocation } from "react-icons/io5";
 
