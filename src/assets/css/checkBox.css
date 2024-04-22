@@ -36,6 +36,8 @@
   display: flex;
   background: #f1f1f1;
   flex-direction: column;
+  height: 250px;
+  overflow-y: scroll;
 }
 .markCheck {
   width: 100%;
@@ -59,15 +61,4 @@
   cursor: pointer;
   justify-content: space-between;
   align-items: center;
-}
-@media (min-width: 768px) {
-  .checkMenuIcon {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1010px) and (orientation: landscape) {
-  .checkMenuIcon {
-    display: block;
-  }
 }

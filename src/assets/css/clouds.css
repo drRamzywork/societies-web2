@@ -298,14 +298,8 @@
   width: 27px;
   height: 27px;
   z-index: 2;
-  /* border-radius: 50%;
-  background-color: #8a93dd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  border: 1px solid white;
-  cursor: pointer; */
+  position: relative;
+  z-index: 99999;
 }
 .RoundedMarkIcon:not(:is(:hover)) {
   z-index: 0;
@@ -333,8 +327,6 @@
 }
 
 .societie {
-  /* width: 200px; */
-  /* height: 200px; */
   position: relative;
   width: fit-content;
 
@@ -374,6 +366,8 @@
     height: 35px;
     display: flex;
     border: 1px solid #e2e2e2;
+    position: relative;
+    z-index: 99999;
 
     svg {
       margin: auto;

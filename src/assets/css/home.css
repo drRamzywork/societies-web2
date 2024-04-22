@@ -68,11 +68,6 @@
   padding: 0px !important;
 }
 
-@media (max-width: 910px) and (orientation: portrait) {
-  .mobile-help {
-    display: flex !important;
-  }
-}
 .mobile-help {
   position: absolute;
   left: 0;
