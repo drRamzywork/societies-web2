@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import MapTwo from "./map/MapTwo";
+import MapTwo2 from "./map/MapTwo2";
 
 function App() {
   const [societiesListSocieties, setSocietiesListSocieties] = useState([]);
@@ -33,6 +34,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<MapTwo societiesListSocieties={societiesListSocieties} />} />
+          {/* <Route path='/map' element={<MapTwo2 />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
